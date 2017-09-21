@@ -6,4 +6,8 @@ happy
 
 create a new branch dev
 
-give me ten yuan
+<<<<<<< HEAD
+give me 10  yuan
+=======
+give me 10 yuan
+>>>>>>> dev
