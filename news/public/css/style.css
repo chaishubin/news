@@ -1,0 +1,116 @@
+*{
+    margin:0px;padding:0px;text-decoration: none;list-style: none;list-style-type:none;
+}
+
+.topbar{
+    width: 100%;
+    height: 2em;
+    background-color: #f9f9f9;
+    border-bottom:1px solid #eaeaea;
+}
+.pull-right{
+    width:15em;
+    line-height:2em;
+}
+.pull-right a{
+    padding:0 1em;
+    color: #999;
+}
+.split-icon{
+    width:0;
+    height:0;
+    border-left: 1px solid #e0e0e0;
+}
+
+
+/*投票css*/
+.clear{
+    clear: both;
+}
+.banner{
+    max-width: 32rem;
+}
+.count_number{background-color:#f0e1ca;}
+.count_number ul{
+    background-color: #f0e1ca;
+    padding: 2rem 1rem 0 1rem;
+}
+.count_number ul li{
+    float: left;
+    margin-left: 1.2rem;
+    margin-right: 1.4rem;
+}
+
+.countdown{
+    background-color: #8d604d;
+    color: #e6cbab;
+    padding: 0.8rem 0rem;
+}
+.countdown ul li{
+    float: left;
+    padding-left: 1rem;
+}
+.countdown ul li.clock{
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #8d604d url(http://test2.tt.lanrenmb.com/Home/Tpl/Index/c2/c.png) no-repeat -32px center;
+}
+
+.containers{
+    max-width: 32rem;
+    background-color: #f0e1ca;
+    overflow: hidden;
+    padding-bottom: 4rem;
+}
+.containers div.introduce div{
+    border-bottom: 0.5px solid #8d604d;
+    color: #8d604d;
+    padding: 0.2rem;
+}
+.containers div.introduce span{
+    padding-right: 0.5rem;
+}
+.containers div.list{
+    padding-top: 0.5rem;
+}
+.containers div.list div.ls_tp{
+    margin-bottom: 5px;
+    float: left;
+    width: 42%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background: #fff;
+    text-align: center;
+    border: 0.3rem solid #fff;
+}
+.containers div.list div.ls_tp div.username{
+    background-color: #f1f1f1;
+    line-height: 1.6rem;
+    color: #929091;
+}
+.containers div.list div.ls_tp div.toup span.like{
+    background: url(../img/like.png) no-repeat left top;
+    position: relative;
+    left: -23px;
+    top: 6px;
+    background-size: 1.5rem auto;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block;
+}
+
+.footer{
+    width: 100%;
+    height: 3.5rem;
+    position: fixed;
+    bottom: 0rem;
+    background-color: #32394a;
+}
+.footer nav a{
+    float: left;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    color: #fff;
+    font-size: 0.5em;
+}
