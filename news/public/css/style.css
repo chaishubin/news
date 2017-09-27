@@ -27,18 +27,28 @@
 .clear{
     clear: both;
 }
-.banner{
-    max-width: 32rem;
+.slide_banner{
+    margin-bottom: 0 !important;
+}
+.slide_banner .carousel-indicators{
+    position: absolute;
+    top: 10.5rem;
+    right: 10rem;
+}
+.slide_banner .carousel-control{
+    display: none;
 }
 .count_number{background-color:#f0e1ca;}
 .count_number ul{
     background-color: #f0e1ca;
-    padding: 2rem 1rem 0 1rem;
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+    margin-bottom: 0;
 }
 .count_number ul li{
     float: left;
-    margin-left: 1.2rem;
-    margin-right: 1.4rem;
+    padding: 0 6.5%;
+    text-align: center;
 }
 
 .countdown{
@@ -48,12 +58,14 @@
 }
 .countdown ul li{
     float: left;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+    font-size: 1.1rem;
 }
 .countdown ul li.clock{
-    width: 3.5rem;
-    height: 3.5rem;
-    background: #8d604d url(http://test2.tt.lanrenmb.com/Home/Tpl/Index/c2/c.png) no-repeat -32px center;
+    width: 3rem;
+    height: 3rem;
+    background: #8d604d url(http://test2.tt.lanrenmb.com/Home/Tpl/Index/c2/c.png) no-repeat 0 center;
+    background-size: 3rem 3rem;
 }
 
 .containers{
@@ -61,6 +73,55 @@
     background-color: #f0e1ca;
     overflow: hidden;
     padding-bottom: 4rem;
+}
+div.search{
+    width: 100%;
+    height: 9rem;
+    background-color: #fff;
+    position: fixed;
+    bottom: 74%;
+    display: none;
+    z-index: 9999;
+    padding-top: 2rem;
+}
+div.apply_for{
+    width: 100%;
+    height: 11rem;
+    background-color: #fff;
+    position: fixed;
+    bottom: 38%;
+    display: none;
+    z-index: 9999;
+    padding-top: 2rem;
+}
+div.apply_for form.form-horizontal{
+    padding-left: 2.5rem;
+}
+div.apply_for form.form-horizontal div.form-group{
+    line-height: 2.4rem;
+}
+div.apply_for .form-horizontal .form-group label{
+    width: 4rem;
+    display: inline-block;
+}
+div.apply_for .form-horizontal .form-group input{
+    border-radius: 2rem;
+}
+div.apply_for .form-horizontal div.sub_apply{
+    text-align: center;
+}
+div.apply_for .form-horizontal div.sub_apply input{
+    width: 86%;
+    line-height: 2.2rem;   
+    margin-top: 0.8rem;
+    background: #2ac845;
+    border-style: none;
+    color: #fff;
+    font-size: 16px;
+    margin-left: -3rem;
+}
+div.search p{
+    text-align: center;
 }
 .containers div.introduce div{
     border-bottom: 0.5px solid #8d604d;
@@ -88,15 +149,45 @@
     line-height: 1.6rem;
     color: #929091;
 }
+.containers div.list div.ls_tp div.toup{
+    position: relative;
+    margin-top: 0.5rem;
+}
+.containers div.list div.ls_tp div.toup .toup_float{
+    float: left;
+    margin-right: 0.5rem;
+    display: inline-block;
+}
 .containers div.list div.ls_tp div.toup span.like{
     background: url(../img/like.png) no-repeat left top;
-    position: relative;
-    left: -23px;
-    top: 6px;
+    position: absolute;
+    left: -6px;
+    top: -4px;
     background-size: 1.5rem auto;
     height: 1.5rem;
     width: 1.5rem;
     display: inline-block;
+    z-index: 1;
+}
+.containers div.list div.ls_tp div.toup button{
+    width: 4rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background: none repeat scroll 0 0 #f0e1ca;
+    font-size: 16px;
+    color: #8d604d;
+    border-radius: 6px;
+    border: 0px solid #f0e1ca;
+    font-style: italic;
+
+}
+.containers div.list div.ls_tp div.toup span.p_num{
+
+    color: #06f;
+}
+
+.containers div.list div.ls_tp div.toup span.p_play{
+    font-size: 12px;
 }
 
 .footer{
@@ -105,6 +196,13 @@
     position: fixed;
     bottom: 0rem;
     background-color: #32394a;
+    z-index: 100;
+}
+.footer nav{
+    transition-duration: .4s;
+    box-shadow: 0 0 10px 0 rgba(155,143,143,0.6);
+    -webkit-box-shadow: 0 0 10px 0 rgba(239, 229, 229, 0.6);
+    -moz-box-shadow: 0 0 10px 0 rgba(239, 229, 229, 0.6);
 }
 .footer nav a{
     float: left;
@@ -113,4 +211,22 @@
     text-align: center;
     color: #fff;
     font-size: 0.5em;
+}
+
+
+/*排行榜cdd*/
+.containers table{
+    width: 100%;
+    border-collapse:collapse;
+}
+.containers tt.t_title{
+    height: 1.5rem;
+    line-height: 2.5rem;
+}
+.containers table th,table td{    
+    border:1px solid #efefef;    
+}
+
+.containers table th{
+    height: 1rem;
 }
